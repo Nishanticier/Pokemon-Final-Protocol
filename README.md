@@ -14,6 +14,7 @@
 - If dependencies are missing, run:
   ```bash
   pip install -r requirements.txt
+  ```
 
 ## About the Launchers
 The `.bat` (Windows) and `.command` (Mac) launchers are simple text scripts.  
@@ -22,11 +23,19 @@ The `.bat` (Windows) and `.command` (Mac) launchers are simple text scripts.
 
 ## Troubleshooting
 
+
 If double-clicking the launcher does not work:
 
 - On macOS:
-  Open a Terminal window, navigate into the project folder, and run:
+  Option 1: Open a Terminal window, navigate into the project folder, and run:
   python3 GameFiles/scripts/main.py
+  Option 2: Run the following on terminal and try `Play_Pokemon_on_Mac.command` again:
+  ```bash
+  chmod +x Play_Pokemon_On_Mac.command
+  ```
 - On Windows:
-  Open cmd, navigate into the project folder, and run:
+  Option 1: Open cmd, navigate into the project folder, and run:
   python GameFiles\scripts\main.py
+  Option 2: If you get a SmartScreen warning, click "More info" → "Run anyway". If you see "Access Denied",
+  right-click `Play_Pokemon_on_Windows.bat` and choose "Run as Administrator".
+  
